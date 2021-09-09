@@ -9,6 +9,7 @@ jobs:
         python-version: [3.8]
 
     steps:
+      
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
@@ -19,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: pip install poetry flake8 pytest
       - name: Install Poetry
-        run: poetry install --no-interaction && 
+        run: poetry install --no-interaction 
       - name: Test with pytest
         run: |
           pytest
