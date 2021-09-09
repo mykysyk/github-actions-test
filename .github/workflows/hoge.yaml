@@ -23,4 +23,4 @@ jobs:
         run: poetry install --no-interaction 
       - name: Test with pytest
         run: |
-          pytest
+          poetry run pytest tests/test_zip_code_app.py -vv
