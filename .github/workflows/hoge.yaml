@@ -1,5 +1,5 @@
-name: Python package
-on: pull_request
+name: Python Lint & Test
+on: push
 jobs:
   build:
     runs-on: ${{ matrix.os }}
