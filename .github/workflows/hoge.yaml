@@ -20,7 +20,6 @@ jobs:
       - name: Install dependencies
         run: pip install poetry flake8 pytest
       - name: Install Poetry
-        run: poetry install --no-interaction 
+        run: poetry install --no-interaction
       - name: Test with pytest
-        run: |
-          poetry run pytest tests/test_zip_code_app.py -vv
+        run: poetry run pytest -vv
